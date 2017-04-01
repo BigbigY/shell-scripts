@@ -1,4 +1,5 @@
 #!/bin/bash
+# Author:Luck
 # This is a CAT minion install scripts.
 # sh scripts_name.sh [setting] [project name]
 
