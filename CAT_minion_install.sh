@@ -18,7 +18,7 @@ cat << EOF >>/data/appdatas/cat/client.xml
 <config mode="client">
   <servers>
     <!--test-->
-    <server ip="10.47.110.125" port="2280" http-port="8080"/>
+    <server ip="%MASTER_IP%" port="2280" http-port="8080"/>
   </servers>
 </config>
 EOF
@@ -30,8 +30,8 @@ cat << EOF >>/data/appdatas/cat/client.xml
 <config mode="client"> 
   <servers> 
     <!--prod--> 
-    <server ip="10.171.203.204" port="2280" http-port="8080"/> 
-    <server ip="10.251.254.98" port="2280" http-port="8080"/> 
+    <server ip="%MASTER_IP%" port="2280" http-port="8080"/> 
+    <server ip="%MASTER_IP%" port="2280" http-port="8080"/> 
   </servers> 
 </config>
 EOF
