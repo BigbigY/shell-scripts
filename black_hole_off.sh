@@ -3,7 +3,7 @@
 
 
 # 获取主机列表
-var=$(curl -s  http://yun.ops.bbtree.com/mtree/get_hostnames?treeid=2198)
+var=$(curl -s  http://xxx.xxx.xxx/mtree/get_hostnames?treeid=2198)
 host_list=`echo $var|sed 's/,/ /g;s/\[/ /g;s/\]/ /g;s/"/ /g'`
 for remote_host in $host_list;do
     /usr/bin/salt $remote_host cmd.script salt://scripts/phpwannx/black_hole_off_client.sh
